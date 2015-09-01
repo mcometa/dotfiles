@@ -1,0 +1,9 @@
+*~
+.DS_Store
+deploy.sh
+prod-deploy.sh
+v2-deploy.sh
+alsocan/application/logs
+alsocan/application/cache
+
+*.swp
