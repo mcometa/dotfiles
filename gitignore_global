@@ -7,3 +7,5 @@ alsocan/application/logs
 alsocan/application/cache
 
 *.swp
+
+.idea
