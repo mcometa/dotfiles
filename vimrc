@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'trusktr/seti.vim'
 Plugin 'bling/vim-airline'
@@ -27,6 +28,21 @@ Plugin 'cakebaker/scss-syntax.vim'
 "Plugin 'groenewege/vim-less'
 Plugin 'JulesWang/css.vim'
 Plugin 'genoma/vim-less'
+
+"Plugin 'Shougo/vimproc.vim'
+"Plugin 'Shougo/unite.vim'
+"Plugin 'rstacruz/vim-fastunite'
+
+"Plugin 'Shougo/neomru.vim'
+"Plugin 'Shougo/unite-outline'
+"Plugin 'tsukkee/unite-tag'
+"
+"Plugin 'rstacruz/vim-node-import'
+
+Plugin 'rstacruz/vim-closer'
+Plugin 'tpope/vim-endwise'
+Plugin 'jiangmiao/auto-pairs'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -99,9 +115,13 @@ autocmd BufEnter * silent! lcd %:p:h
 " Open a file in nerdtree when you press enter key
 let NERDTreeMapOpenInTab='<ENTER>'
 
-
+"map <C-p> [unite]p
 
 "let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 "if executable('ag')
 "    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 "endif
+"
+
+" Synstastic  for js
+let g:syntastic_javascript_checkers = ['standard']

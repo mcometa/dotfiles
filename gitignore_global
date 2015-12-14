@@ -9,3 +9,11 @@ alsocan/application/cache
 *.swp
 
 .idea
+
+*.ruby-version*
+
+node_modules/
+
+# ProduceRun
+vendor/cache
+dump.rdb

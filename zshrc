@@ -86,3 +86,8 @@ export PATH="$(brew --prefix homebrew/php/php55)/sbin:$PATH"
 # export PATH="$(brew --prefix ruby)/bin:$PATH"
 source ~/.bash_aliases
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
